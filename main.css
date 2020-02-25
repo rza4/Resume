@@ -1,0 +1,65 @@
+.header {
+    grid-area: header;
+    background: darkcyan;
+    padding-left: 10px;
+    border: outset lightseagreen 10px;
+    font-family:serif  
+}
+.header:hover{
+    
+    background: DarkTurquoise;
+    padding-left: 10px;
+    font-family:serif
+}
+
+.main {
+    grid-area: main;
+    Background: lightseagreen;
+     border: outset lightseagreen 10px;
+    padding-left: 10px;
+}
+.sidebar{
+    grid-area: sidebar;
+    background: lightseagreen;
+    font-family:serif ;
+    border: outset lightseagreen 10px;
+    padding-left: 10px;
+
+   
+}
+
+
+.profilepicture {
+    width: 100px;
+    float: right;
+    padding-right:10px;
+
+}
+
+.container {
+    max-width: 1080px;
+    margin:auto;
+    display: grid;
+    grid-template-columns: 30px auto 300px;
+    /*grid-template-rows: lfr lfr lfr; */
+    grid-template-rows: auto auto 250px;
+    /*grid-template-rows: repeat(3,250px); */
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    
+    grid-template-areas:
+        "header header header"
+        "main main sidebar"
+}
+a{
+    color: Black;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+    color: rebeccapurple;
+}
+
+.headshot {
+    max-width: 100%;
+}
